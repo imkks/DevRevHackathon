@@ -1,0 +1,56 @@
+# For reference: https://docs.devrev.ai/snap-ins/references/manifest.
+# Refactor the code based on your business logic.
+
+version: "2"
+name: "VOC Insights"
+description: "Creates ticket taking VOC from different channels"
+
+# This is the name displayed in DevRev where the Snap-In takes actions using the token of this service account.
+service_account:
+  display_name: VOC GPT
+
+# Add any external connection, reference: https://docs.devrev.ai/snap-ins/concepts#connection.
+
+# Add organization level inputs, reference: https://docs.devrev.ai/snap-ins/references/inputs.
+# inputs:
+#   organization:
+#     - name: sample_value
+#       description: Sample input value.
+#       field_type: text
+#       default_value: "primary"
+#       ui:
+#         display_name: Sample Value
+
+# Event source reference: https://docs.devrev.ai/snap-ins/references/event_sources#supported-event-source-types-and-their-event-types.
+# event_sources:
+#   organization:
+#     - name: devrev-event-source
+#       description: Event source listening on DevRev events.
+#       display_name: DevRev events listener
+#       type: devrev-webhook
+#       config:
+#         event_types:
+#           - work_created
+
+# Functions reference: https://docs.devrev.ai/snap-ins/references/functions.
+functions:
+  - name: get_insights
+    description: function to get insights
+commands:
+  - name: get_insights
+    namespace: devrev
+    description: Fetches insights from backend server and creates tickets
+    surfaces:
+      - surface: discussions
+        object_types:
+          - snap_in
+    usage_hint: "/get_insights"
+    function: get_insights
+
+# Automations reference: https://docs.devrev.ai/snap-ins/concepts#automation.
+# automations:
+#   - name: handle-work-created-event
+#     source: devrev-event-source
+#     event_types:
+#       - work_created
+#     function: on_work_creation

@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+    devrev:
+        container_name: devrev-backend
+        build: .
+        image: devrev-backend:latest
+        env_file:
+            - .env
+        restart: always
+        ports:
+            - 3000:3000
+        volumes:
+            - ./:/home/node/app
