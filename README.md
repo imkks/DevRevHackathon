@@ -32,6 +32,10 @@ The Insights Engine - Frontend is built using React JS and provides a user-frien
 ### Dashboard CustomerEcho Insights
 ![1](https://github.com/imkks/DevRevHackathon/assets/96498610/c7305f12-7c60-4e4c-b0e7-053b5c172b55)
 
+### Click of Fetch
+
+![4](https://github.com/imkks/DevRevHackathon/assets/96498610/8a06c06a-faa1-4e5b-b5cb-a647b44d49c7)
+
 ### Graphs on click of Fetch
 ![2](https://github.com/imkks/DevRevHackathon/assets/96498610/96e7b45f-290e-4f39-ae5b-32ce97dc5bc2)
 
@@ -63,6 +67,16 @@ npm run dev
 ```
 
 **Prerequisites:** React, Node.js should be installed on your system.
+
+### Sample .env file ( prerequisite )
+
+- MONGO_USER=username
+- MONGO_PASSWORD=password
+- MONGO_PATH=clusterpath
+- PORT=3000
+- FIREWORKS_API_KEY=api_key
+- org_name=openai_org_name
+- OPENAI_API_KEY=openaiapikey
 
 
 ## Testing and Technology Selection
