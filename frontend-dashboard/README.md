@@ -8,8 +8,11 @@ Graphs on click of Fetch
 Drill down to each graph
 ![3](https://github.com/imkks/DevRevHackathon/assets/96498610/22b2eece-3428-44a8-b3c5-397f8d6ce694)
 
+About Team:-
+
+![team](https://github.com/imkks/DevRevHackathon/assets/96498610/1a00e655-8cb0-4bc7-a456-892ffc164365)
 
 
-To start project:- 
+To set up the project clone the repo and use the following commands in the folder frontend-dashboard:-
 npm install
 npm run dev
