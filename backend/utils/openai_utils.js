@@ -19,7 +19,7 @@ const sysPrompt=`
                 Further for each of the parent-tags, classify the review based on parent tags in these sub categories(subTag):
                 1. Feature request - [UI/UX improvements, Aditional features, Feature Upgrade]
                 2. Bug - [Application crashes/freezes, Functionality issues, Data synchronization issues]
-                3. Question [Application functionality, Future updates, Integration,]
+                3. Question [Application functionality, Future updates, Integration]
                 4. Others - [Others]
 
                 Also for all reviews, tag them on the basis of their sentiment in one of the following classes:
@@ -142,6 +142,7 @@ export const chatCompletion=async (humanPrompt, argsValues)=> {
         temperature: 0.8,
         max_tokens: 2500,
         top_p: 1,
+        seed:125,
         frequency_penalty: 0,
         presence_penalty: 0,
       });

@@ -11,7 +11,7 @@ export const aggregateReviews=async ()=>{
      ]).toArray();
     //  console.log(reviews.length)
      let finalReviews=``;
-     for(let i=0;i<2;i++)
+     for(let i=0;i<10;i++)
      {
         // finalReviews.push(reviews[i].text)
         finalReviews+=reviews[i].text+'\n\n';
