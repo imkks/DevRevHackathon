@@ -1,0 +1,43 @@
+.app-container{
+    justify-content: center;
+    display:flex;
+}
+.dropCheckbox-container{
+    margin-right:'100px';
+    justify-content: center;
+    position: absolute;
+    top:20%;
+}
+
+.dropdown-container{
+    margin-right:'100px';
+    justify-content: center;
+    
+}
+
+.checkbox-container{
+    margin-right:100px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button-container{
+    position: absolute;
+    top:30%;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    size: lg;
+    border-radius:10px;
+  }
+
+  .card-total-reviews{
+    margin-bottom: 10px;
+    border: black;
+    border-radius: 1rem;
+  }
+
+ .custom-select{
+    position: relative;
+  font-family: Arial;
+ }
