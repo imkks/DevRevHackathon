@@ -6,8 +6,10 @@ export const aggregateReviews=async ()=>{
     try{
    let reviews=await db.collection("playstore_reviews").aggregate([
         { $project: { text:1,_id: 0 } },
-        { $unionWith: { coll: "appstore_reviews", pipeline: [ { $project: { text:1,_id: 0 } } ]} }
+        { $unionWith: { coll: "appstore_reviews", pipeline: [ { $project: { text:1,_id: 0 } } ]} },
+        {$limit:20}
      ]).toArray();
+    //  console.log(reviews.length)
      let finalReviews=``;
      for(let i=0;i<2;i++)
      {

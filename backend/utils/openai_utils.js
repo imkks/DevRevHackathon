@@ -31,75 +31,97 @@ const sysPrompt=`
 
                 [
                     {
-                        "parent_tag1": "Feature request/Bug/Question/Others",
-                        "no_of_reviews": null,
-                        "Summary": null,
+                        "parent_tag": "Feature request/Bug/Question/Others",
+                        "no_of_reviews": 4,
+                        "Summary": "Summary of entire reviews of this particular parent tag",
                         "Reviews": {
 
-                                "review_1": ["Tweet","subTag", "sentiment_tag"],
-                                "review_2": ["Tweet","subTag", "sentiment_tag"],
+                                "review_1": ["Review","subTag", "sentiment_tag"],
+                                "review_2": ["Review","subTag", "sentiment_tag"],
                                 ...
 
                         }
                     },
                     {
                         "parent_tag": "Feature request/Bug/Question/Others",
-                        "no_of_reviews": null,
-                        "Summary": null,
+                        "no_of_reviews": 2,
+                        "Summary": "Summary of entire reviews of this particular parent tag",
                         "Reviews": {
 
-                                "review_1": ["Tweet","subTag", "sentiment_tag"],
-                                "review_2": ["Tweet","subTag", "sentiment_tag"],
+                                "review_1": ["Review","subTag", "sentiment_tag"],
+                                "review_2": ["Review","subTag", "sentiment_tag"],
                                 ...
 
                         }
                     },
                     {
                         "parent_tag": "Feature request/Bug/Question/Others",
-                        "no_of_reviews": null,
-                        "Summary": null,
+                        "no_of_reviews": 3,
+                        "Summary": "Summary of entire reviews of this particular parent tag",
                         "Reviews": {
 
-                                "review_1": ["Tweet","subTag", "sentiment_tag"],
-                                "review_2": ["Tweet","subTag", "sentiment_tag"],
+                                "review_1": ["Review","subTag", "sentiment_tag"],
+                                "review_2": ["Review","subTag", "sentiment_tag"],
                                 ...
 
                         }
                     },
-                    {...}
+                    {
+                        "parent_tag": "Feature request/Bug/Question/Others",
+                        "no_of_reviews": 4,
+                        "Summary": "Summary of entire reviews of this particular parent tag",
+                        "Reviews": {
+
+                                "review_1": ["Review","subTag", "sentiment_tag"],
+                                "review_2": ["Review","subTag", "sentiment_tag"],
+                                ...
+
+                        }
+                    }
+                    
                 ]
 
                 Sample output:
 
                 [
                     {
-                        "tag1": "Feature request",
-                        "noOfTweets": 10,
-                        "summary": "Users are requesting new features such as dark mode, CSV data export, customizable dashboard, search feature, reminders, task sorting, calendar integration, etc.",
+                        "parent_tag": "Feature request",
+                        "no_of_reviews": 10,
+                        "Summary": "Users are requesting new features such as dark mode, CSV data export, customizable dashboard, search feature, reminders, task sorting, calendar integration, etc.",
                         "Reviews": {
-                            "Twitter": {
-                                "tweet1": ["Hey @AppDevTeam, love your app but it would be amazing if you could add a dark mode option! #FeatureRequest", "UI improvements", "Positive"],
-                            }
+                            
+                                "review_1": ["Hey @AppDevTeam, love your app but it would be amazing if you could add a dark mode option! #FeatureRequest", "UI improvements", "Positive"],
+                            
                         }
                     },
                     {
-                        "tag2": "Bug",
-                        "noOfTweets": 10,
-                        "summary": "Users are reporting bugs related to app crashes, freezing, incorrect data display, login issues, synchronization problems, etc.",
+                        "parent_tag": "Bug",
+                        "no_of_reviews": 9,
+                        "Summary": "Users are reporting bugs related to app crashes, freezing, incorrect data display, login issues, synchronization problems, etc.",
                         "Reviews": {
-                            "Twitter": {
-                                "tweet1": ["Hey @AppDevTeam, just encountered a bug where the app crashes every time I try to open the settings menu. Can you please fix it? #Bug", "Application crashes/freezes", "Negative"],
-                            }
+                            
+                                "review_1": ["Hey @AppDevTeam, just encountered a bug where the app crashes every time I try to open the settings menu. Can you please fix it? #Bug", "Application crashes/freezes", "Negative"],
+                            
                         }
                     },
                     {
-                        "tag3": "Question",
-                        "noOfTweets": 10,
-                        "summary": "Users have questions about features like dark mode, data export, task scheduling, language support, notifications, etc.",
+                        "parent_tag": "Question",
+                        "no_of_reviews": 6,
+                        "Summary": "Users have questions about features like dark mode, data export, task scheduling, language support, notifications, etc.",
                         "Reviews": {
-                            "Twitter": {
-                                "tweet1": ["Hey @AppDevTeam, I'm curious if there's a way to export my data from the app to a CSV file for analysis. Can you guide me on how to do it? #Question", "Application functionality", "Neutral"],
-                            }
+                            
+                                "review_1": ["Hey @AppDevTeam, I'm curious if there's a way to export my data from the app to a CSV file for analysis. Can you guide me on how to do it? #Question", "Application functionality", "Neutral"],
+                            
+                        }
+                    },
+                    {
+                        "parent_tag": "Others",
+                        "no_of_reviews": 5,
+                        "Summary": "Some Random Reviews written by users.",
+                        "Reviews": {
+                            
+                                "review_1": ["Very good app", "Others", "Positive"],
+                            
                         }
                     }
                 ]`
