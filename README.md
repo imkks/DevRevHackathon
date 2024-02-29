@@ -4,9 +4,11 @@
 
 This project, developed by Team CodeCrusaders, aims to derive insights from customer reviews using the IntelliTune Engine and present them through an Insights Engine. The project encompasses three main components: IntelliTune Engine, Backend, and Frontend Dashboard.
 
+![1](https://github.com/imkks/DevRevHackathon/assets/31439850/73ae027d-53dd-4fe4-8a76-ae07f53c1f67)
+
 ## 1. IntelliTune Engine
 
-The IntelliTune Engine is responsible for extracting insights from customer review data using Language Models (LLMs). By analyzing the textual data, it provides valuable insights into customer sentiments, preferences, and feedback.
+The IntelliTune Engine is responsible for extracting insights from customer review data using Large Language Models (LLMs). By analyzing the textual data, it provides valuable insights into customer sentiments, preferences, and feedback.
 
 ## 2. Data Ingestion Engine - Backend
 
@@ -35,6 +37,33 @@ The Insights Engine - Frontend is built using React JS and provides a user-frien
 
 ### Drill down to each graph
 ![3](https://github.com/imkks/DevRevHackathon/assets/96498610/22b2eece-3428-44a8-b3c5-397f8d6ce694)
+
+# How to reproduce the CustomerEcho Insights
+
+## Backend
+
+To reproduce the CustomerEcho Insights Backend, follow these steps:
+
+```bash
+git clone repo-url
+cd backend
+npm install
+docker-compose up
+```
+
+**Prerequisites:** Node.js, Docker, Docker Compose should be installed on your system. API keys should be passed with you own keys.
+
+## Frontend
+
+To reproduce the CustomerEcho Insights Frontend, follow these steps:
+
+```bash
+npm install
+npm run dev
+```
+
+**Prerequisites:** React, Node.js should be installed on your system.
+
 
 ## Testing and Technology Selection
 
